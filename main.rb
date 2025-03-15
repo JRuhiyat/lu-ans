@@ -10,9 +10,11 @@ grid_size = 5
 your_strategy = -> {
   game = Game.new(grid_size: grid_size)
 
-  you = YourPlayer.new(game: game, name: 'Unknown candidate')
+  p1 = YourPlayer.new(game: game, name: 'Player 1')
+  p2 = YourPlayer.new(game: game, name: 'Player 2')
 
-  game.add_player(you)
+  game.add_player(p1)
+  game.add_player(p2)
 
   game.start
 }
